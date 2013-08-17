@@ -736,6 +736,8 @@
 }
 
 .snapsmart-bootstrap .container {
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -760,36 +762,29 @@
   clear: both;
 }
 
-.snapsmart-bootstrap .row:before,
-.snapsmart-bootstrap .row:after {
-  display: table;
-  content: " ";
-}
-
-.snapsmart-bootstrap .row:after {
-  clear: both;
-}
-
-.snapsmart-bootstrap .row:before,
-.snapsmart-bootstrap .row:after {
-  display: table;
-  content: " ";
-}
-
-.snapsmart-bootstrap .row:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .container .snapsmart-bootstrap .row {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-}
-
-.snapsmart-bootstrap .row .row {
+.snapsmart-bootstrap .row {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.snapsmart-bootstrap .row:before,
+.snapsmart-bootstrap .row:after {
+  display: table;
+  content: " ";
+}
+
+.snapsmart-bootstrap .row:after {
+  clear: both;
+}
+
+.snapsmart-bootstrap .row:before,
+.snapsmart-bootstrap .row:after {
+  display: table;
+  content: " ";
+}
+
+.snapsmart-bootstrap .row:after {
+  clear: both;
 }
 
 .snapsmart-bootstrap .col-xs-1,
@@ -910,7 +905,7 @@
 
 @media (min-width: 768px) {
   .snapsmart-bootstrap .container {
-    max-width: 720px;
+    max-width: 750px;
   }
   .snapsmart-bootstrap .col-sm-1,
   .snapsmart-bootstrap .col-sm-2,
@@ -1064,7 +1059,7 @@
 
 @media (min-width: 992px) {
   .snapsmart-bootstrap .container {
-    max-width: 940px;
+    max-width: 970px;
   }
   .snapsmart-bootstrap .col-md-1,
   .snapsmart-bootstrap .col-md-2,
@@ -1227,7 +1222,7 @@
 
 @media (min-width: 1200px) {
   .snapsmart-bootstrap .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
   .snapsmart-bootstrap .col-lg-1,
   .snapsmart-bootstrap .col-lg-2,
@@ -1891,36 +1886,29 @@ textarea.snapsmart-bootstrap .input-lg {
   padding-top: 6px;
 }
 
-.snapsmart-bootstrap .form-horizontal .form-group:before,
-.snapsmart-bootstrap .form-horizontal .form-group:after {
-  display: table;
-  content: " ";
-}
-
-.snapsmart-bootstrap .form-horizontal .form-group:after {
-  clear: both;
-}
-
-.snapsmart-bootstrap .form-horizontal .form-group:before,
-.snapsmart-bootstrap .form-horizontal .form-group:after {
-  display: table;
-  content: " ";
-}
-
-.snapsmart-bootstrap .form-horizontal .form-group:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .container .snapsmart-bootstrap .form-horizontal .form-group {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-}
-
-.snapsmart-bootstrap .form-horizontal .form-group .row {
+.snapsmart-bootstrap .form-horizontal .form-group {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.snapsmart-bootstrap .form-horizontal .form-group:before,
+.snapsmart-bootstrap .form-horizontal .form-group:after {
+  display: table;
+  content: " ";
+}
+
+.snapsmart-bootstrap .form-horizontal .form-group:after {
+  clear: both;
+}
+
+.snapsmart-bootstrap .form-horizontal .form-group:before,
+.snapsmart-bootstrap .form-horizontal .form-group:after {
+  display: table;
+  content: " ";
+}
+
+.snapsmart-bootstrap .form-horizontal .form-group:after {
+  clear: both;
 }
 
 @media (min-width: 768px) {
@@ -2280,7 +2268,7 @@ fieldset[disabled] .snapsmart-bootstrap .btn-link:focus {
 }
 
 .snapsmart-bootstrap .btn-xs {
-  padding: 3px 5px;
+  padding: 1px 5px;
 }
 
 .snapsmart-bootstrap .btn-block {
@@ -2981,19 +2969,11 @@ button.snapsmart-bootstrap .close {
   background-color: transparent;
 }
 
-.snapsmart-bootstrap .nav.open > a,
-.snapsmart-bootstrap .nav.open > a:hover,
-.snapsmart-bootstrap .nav.open > a:focus {
-  color: #ffffff;
-  background-color: #428bca;
+.snapsmart-bootstrap .nav .open > a,
+.snapsmart-bootstrap .nav .open > a:hover,
+.snapsmart-bootstrap .nav .open > a:focus {
+  background-color: #eeeeee;
   border-color: #428bca;
-}
-
-.snapsmart-bootstrap .nav.open > a .caret,
-.snapsmart-bootstrap .nav.open > a:hover .caret,
-.snapsmart-bootstrap .nav.open > a:focus .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
 }
 
 .snapsmart-bootstrap .nav .nav-divider {
@@ -3043,13 +3023,18 @@ button.snapsmart-bootstrap .close {
 }
 
 .snapsmart-bootstrap .nav-tabs.nav-justified > li {
-  display: table-cell;
   float: none;
-  width: 1%;
 }
 
 .snapsmart-bootstrap .nav-tabs.nav-justified > li > a {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .snapsmart-bootstrap .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
 }
 
 .snapsmart-bootstrap .nav-tabs.nav-justified > li > a {
@@ -3094,13 +3079,18 @@ button.snapsmart-bootstrap .close {
 }
 
 .snapsmart-bootstrap .nav-justified > li {
-  display: table-cell;
   float: none;
-  width: 1%;
 }
 
 .snapsmart-bootstrap .nav-justified > li > a {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .snapsmart-bootstrap .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
 }
 
 .snapsmart-bootstrap .nav-tabs-justified {
@@ -3232,7 +3222,6 @@ button.snapsmart-bootstrap .close {
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
-  overflow-y: auto;
   border-top: 1px solid #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -3258,6 +3247,10 @@ button.snapsmart-bootstrap .close {
   clear: both;
 }
 
+.snapsmart-bootstrap .navbar-collapse.in {
+  overflow-y: auto;
+}
+
 @media (min-width: 768px) {
   .snapsmart-bootstrap .navbar-collapse {
     width: auto;
@@ -3277,9 +3270,12 @@ button.snapsmart-bootstrap .close {
   }
 }
 
+.snapsmart-bootstrap .navbar-static-top {
+  border-width: 0 0 1px;
+}
+
 @media (min-width: 768px) {
   .snapsmart-bootstrap .navbar-static-top {
-    border-width: 0 0 1px;
     border-radius: 0;
   }
 }
@@ -3363,10 +3359,7 @@ button.snapsmart-bootstrap .close {
 }
 
 .snapsmart-bootstrap .navbar-nav {
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin: 7.5px -15px;
 }
 
 .snapsmart-bootstrap .navbar-nav > li > a {
@@ -3437,8 +3430,6 @@ button.snapsmart-bootstrap .close {
 @media (min-width: 768px) {
   .snapsmart-bootstrap .navbar-nav {
     float: left;
-    padding-top: 0;
-    padding-bottom: 0;
     margin: 0;
   }
   .snapsmart-bootstrap .navbar-nav > li {
@@ -3841,7 +3832,7 @@ button.snapsmart-bootstrap .close {
 
 .snapsmart-bootstrap .btn-group-xs > .btn {
   padding: 5px 10px;
-  padding: 3px 5px;
+  padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
